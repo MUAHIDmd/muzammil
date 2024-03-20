@@ -11,7 +11,7 @@ body {
 }
 
 .main {
-    background-image: url("asadas/bg.jpg");
+    background-image: url("asadas/imges/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
@@ -80,15 +80,16 @@ nav button {
     font-size: 20px;
     text-align: center;
 }
-.separation{
+.separation {
     height: 7px;
-    background-color: rgb(46 , 44 , 44);
+    background-color: rgb(46, 44, 44);
     position: relative;
-    z-index: 10;
+    z-index: 20;
 }
 
-.btn{
-    padding: 30px 8px;
+
+.btn {
+    padding: 3px 8px;
     font-weight: 400;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
@@ -97,7 +98,7 @@ nav button {
     cursor: pointer;
 
 }
-.btn-red{
+.btn-red {
     background-color: red;
     color: white;
     padding: 3px 24px;
@@ -106,11 +107,11 @@ nav button {
     font-weight: 400;
 }
 
-.btn-red-sm{
+.btn-red-sm {
     background-color: red;
     color: white;
 }
-.hero-button{
+.hero-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,21 +126,25 @@ nav button {
     border: 1px solid rgba(246, 238, 238, 0.5);
 
 }
-.first{
+.first {
     display: flex;
     justify-content: center;
     max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
-.secimg{
+.secimg {
     position: relative;
 }
-.secimg img{
+.secimg img {
     width: 555px;
     position: relative;
     z-index: 10;
 
 }
-.secimg video{
+.secimg video {
     position: absolute;
     top: 51px;
     right: 0;
@@ -212,6 +217,83 @@ footer .questions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
+}
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
 
 
